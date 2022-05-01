@@ -61,26 +61,71 @@
 # print(f"Your final bill is: ${bill}")
 
 # Exercise 3.5 - Love Calculator
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
-true_no = 0
-love_no = 0
-name = name1.lower()+name2.lower()
-true_no += name.count('t')
-true_no += name.count('r')
-true_no += name.count('u')
-true_no += name.count('e')
-love_no += name.count('l')
-love_no += name.count('o')
-love_no += name.count('v')
-love_no += name.count('e')
-true_love = int(str(true_no)+str(love_no))
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n")
+# name2 = input("What is their name? \n")
+# true_no = 0
+# love_no = 0
+# name = name1.lower()+name2.lower()
+# true_no += name.count('t')
+# true_no += name.count('r')
+# true_no += name.count('u')
+# true_no += name.count('e')
+# love_no += name.count('l')
+# love_no += name.count('o')
+# love_no += name.count('v')
+# love_no += name.count('e')
+# true_love = int(str(true_no)+str(love_no))
 
-if 10 > true_love > 90:
-    print(f"Your score is {true_love}, you goo together like coke and mentos")
-elif true_love<=50 and true_love>=40:
-    print(f"Your score is {true_love}, you are alright together.")
+# if 10 > true_love > 90:
+#     print(f"Your score is {true_love}, you goo together like coke and mentos")
+# elif true_love<=50 and true_love>=40:
+#     print(f"Your score is {true_love}, you are alright together.")
+# else:
+#     print(f"Your score is {true_love}")
+
+# Day 3 Project
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+print("You're at a cross road. Where do you want to go? Type \"left\" or \"right\"")
+choice1 = input().lower()
+if choice1 != "left":
+    print("You fell into a hole. Game Over.")
 else:
-    print(f"Your score is {true_love}")
-    
+    print("You've come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across.")
+    choice2 = input().lower()
+    if choice2 != "wait":
+        print("Attacked by trout. Game Over")
+    else:
+        print("You arrived at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which color door do you choose?")
+        choice3 = input().lower()
+        if choice3 == "red":
+            print("Burned by fire. Game Over")
+        elif choice3 == "blue":
+            print("Eaten by beasts. Game Over")
+        elif choice3 != "yellow":
+            print("Went YOLO. Game Over")
+        else:
+            print("You found the treasure! You Win!")

@@ -59,7 +59,7 @@ def number_guesser_game():
     print(logo)
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
-    print(f"Pssst, the answer is {number}")
+    # print(f"Pssst, the answer is {number}")
     if input("Choose a difficulty. Type 'easy' or 'hard': ") == 'hard':
         num_of_attempts = 5
     else:

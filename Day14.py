@@ -1,14 +1,14 @@
 # Day 14 Project Higher or Lower
 
-# TODO 0: Create necesssary modules with data and import them
+# 0: Create necesssary modules with data and import them
 import random
 from os import system
 from Day14_art import logo, vs
 from Day14_gamedata import data
 
-# TODO 1: Create a function that games
+#  1: Create a function that games
 def higher_lower_game():
-    # TODO 3: print the game logo
+    # 3: print the game logo
     my_data = data[:]
     score = 0
     random.shuffle(my_data)
@@ -45,5 +45,5 @@ def higher_lower_game():
 
 
 
-# TODO 2: Call the game function
+#  2: Call the game function
 higher_lower_game()

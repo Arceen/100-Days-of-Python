@@ -1,5 +1,6 @@
 from turtle import Turtle
 MOVE_DISTANCE = 20
+POS = [(0, 0), (-20, 0), (-40, 0)]
 dir_dict = {
     "UP" : 90,
     "LEFT": 180,
@@ -8,17 +9,24 @@ dir_dict = {
 }
 class Snake:
     def __init__(self):
-        pos = [(0, 0), (-20, 0), (-40, 0)]
+        self.snake_body = []
+        self.reset()
+        
+    def reset(self):
+        for i in self.snake_body:
+            i.clear()
+            i.hideturtle()
+            del i
+        # self.snake_body.clear()
         self.snake_body = []
         self.not_update_dir = True
-        for i in range(len(pos)):
+        for i in range(len(POS)):
             t = Turtle(shape="square")
             t.color("white")
             t.pu()
-            t.goto(pos[i])
+            t.goto(POS[i])
             self.snake_body.append(t)
             self.head = self.snake_body[0]
-    
     def tail(self):
         return self.snake_body[-1]
     def eaten(self):

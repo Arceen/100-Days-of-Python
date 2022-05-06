@@ -5,14 +5,14 @@ class Paddle(Turtle):
         super().__init__()
         self.shape("square")
         self.speed('fastest')
-        self.shapesize(3, 0.7)
+        self.shapesize(stretch_wid=5, stretch_len=1)
         self.color("white")
         self.pu()
         self.goto(pos)
     def up(self):
-        if self.ycor()+10<=230:
-            self.goto(self.xcor(), self.ycor()+10)
+        if self.ycor()+20<=250:
+            self.goto(self.xcor(), self.ycor()+20)
     def down(self):
-        if self.ycor()-10>=-230:
-            self.goto(self.xcor(), self.ycor()-10)
+        if self.ycor()-20>=-250:
+            self.goto(self.xcor(), self.ycor()-20)
     

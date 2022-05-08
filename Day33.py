@@ -77,7 +77,7 @@ while True:
             print('Error sending. Trying again')
         else:
             sent_for_days.append(today)
-    time.sleep(4)
+    time.sleep(60)
     print("checking again")
 
 

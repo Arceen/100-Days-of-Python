@@ -75,7 +75,7 @@ if len(bday_list)>0:
     connection.login(user=my_email, password=password)
     for i in bday_list:
         print(f"Sending message to: {i['name']}")
-        file_name = random.randint(1,3)
+        file_name = random.randint(1, 3)
         message = ' Happy Birthday '
         with open('Day32_letter_templates/letter_'+str(file_name)+'.txt') as f:
             message = f.read()
@@ -85,7 +85,7 @@ if len(bday_list)>0:
         msg['Subject'] = '🎉Happy Birthday🎉'
         msg['From'] = my_email
         msg['To'] = i['email']
-        connection.send_message(msg)   
-  
+        connection.send_message(msg)
+
     connection.close()
 

@@ -34,6 +34,7 @@ for code in weather_codes_hourly:
 
 server = smtplib.SMTP_SSL('smtp.mail.yahoo.com')
 server.login(user=my_email, password=my_password)
+
 email = EmailMessage()
 email.set_content("Bring an umbrella" if bring_umbrella else "Don't bring an umbrella")
 email['From'] = my_email

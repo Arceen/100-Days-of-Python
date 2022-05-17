@@ -37,3 +37,64 @@ body{
 .download-button{
     margin: 5% 3% 5% 0;
 }
+
+#features .row{
+    text-align: center;
+}
+#features i{
+    color: #ef8172;
+    margin-bottom: 0.3em;
+}
+#features i:hover{
+    color: #ff4c68;
+}
+#features h3{
+ 
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+#features p{
+    /* width: 15rem; */
+    color: #8f8f8f;
+}
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+#testimonials h2{
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-image{
+    width: 15%;
+    margin: 20px 20px 50px 20px;
+}
+.carousel-inner{
+
+    padding: 7% 15%;
+}
+
+#pricing{
+    padding:100px;
+}
+.pricing-column{
+    padding: 3% 2%;
+}

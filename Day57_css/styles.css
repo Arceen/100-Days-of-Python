@@ -4,12 +4,13 @@ body{
 #title{
     background-color: #ff4564;
     color: #fff;
+    padding:20px;
 }
 .navbar{
     padding-bottom: 4.5rem;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 1% 15% 7%;
 }
 .title-head{
     font-size: 3.5rem;
@@ -30,12 +31,21 @@ body{
 }
 .title-image{
     margin: 1.5rem 1.5rem;
-    width: 60%;
+    /* width: 60%; */
+    width: 280px;
     transform: rotate(25deg);
+    position:absolute;
+    right:25%
 }
 
 .download-button{
     margin: 5% 3% 5% 0;
+}
+#features{
+    /* margin-top:-15em; */
+    position:relative;
+    z-index:1;
+    background-color: white;
 }
 
 #features .row{
